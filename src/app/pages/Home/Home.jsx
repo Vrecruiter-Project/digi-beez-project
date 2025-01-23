@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Herosection from '../../components/herosection/Herosection'
 import Coursebrocher from '../../components/CourseBrocher/Coursebrocher'
 import Navbar from '../../components/Navbar/Navbar'
-const Home = () => {
+
+export default function Home() {
   return (
     <>
+        <Herosection/>
      <Navbar/>
         <Coursebrocher/>
     </>
   )
 }
-
-export default Home
