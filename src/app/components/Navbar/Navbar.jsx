@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import LogoLight from '../../../assets/NavbarLogo/trace.svg';
-import LogoDark from '../../../assets/NavbarLogo/trace(4).svg';
+import LogoLight from '../../../assets/NavbarLogo/trace.png';
+import LogoDark from '../../../assets/NavbarLogo/trace(4).png';
 
 import {
     AppBar,
@@ -38,7 +38,7 @@ export default function Navbar() {
             <CssBaseline />
             <AppBar
                 position="static"
-                sx={{ backgroundColor: 'transparent', boxShadow: 'none' }} // Transparent background
+                sx={{ backgroundColor: 'transparent', py:"5px" }} // Transparent background
             >
                 <Container>
                     <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -46,7 +46,7 @@ export default function Navbar() {
                         <img
                             src={mode === 'light' ? LogoLight : LogoDark}
                             alt="Logo"
-                            style={{ height: '100px', width: 'auto', cursor: 'pointer' }}
+                            style={{ height: '50px', width: 'auto', cursor: 'pointer' }}
                         />
 
 
