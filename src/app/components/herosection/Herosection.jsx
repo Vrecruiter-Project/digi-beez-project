@@ -5,7 +5,6 @@ import {
   Button,
   Container,
   Divider,
- 
   IconButton,
   InputAdornment,
   Paper,
@@ -14,27 +13,30 @@ import {
   useTheme,
 } from "@mui/material";
 import Grid2 from '@mui/material/Grid2';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+import Radio from '@mui/material/Radio';
 
 export default function Herosection() {
   const theme = useTheme();
 
   return (
-    <Box display="flex"  alignItems="center" justifyContent="center">
+    <Box display="flex" alignItems="center" justifyContent="center" mt={{ xs: 0, md: 6, lg: 2 }}>
       <Container>
-        <Grid2 container spacing={8} alignItems="center">
+        <Grid2 container spacing={{ xs: 2, md: 6, lg: 10 }} alignItems="center">
           {/* Left Section */}
-          <Grid2 size={ {xs:12, md:6 ,lg:6 }}display="flex" flexDirection="column">
-            <Box mt={6} mb={10}>
-              <Box display="flex" gap={1} alignItems="center" sx={{
-              
-                
-              }}>
-                <img
-                  src="https://files.codingninjas.com/fir-professional-tag-.webp"
-                  alt="star-icon"
-                  style={{ height: "32px", width: "132px" }}
-                />
-              </Box>
+          <Grid2 size={{ xs: 12, md: 6, lg: 6 }} display="flex" flexDirection="column">
+            <Box
+              mt={6}
+              mb={10}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: { xs: '3px', sm: '3px', md: '10px', lg: '18px' }  
+              }}
+            >
               <Typography variant="h4" fontWeight="bold" mt={2}>
                 Full Stack Web Development Job Bootcamp
               </Typography>
@@ -42,7 +44,7 @@ export default function Herosection() {
                 Choose MERN stack or Spring Boot and acquire expertise through
                 practical application and real-world projects.
               </Typography>
-              <Box display="flex" flexWrap="wrap" gap={2} mt={2}>
+              <Box display="flex" flexWrap="wrap" justify-content='center' gap={2} mt={2}>
                 {[
                   {
                     icon: "https://files.codingninjas.com/live-one-one-doubt-support-34352.svg",
@@ -65,6 +67,8 @@ export default function Herosection() {
                     key={index}
                     display="flex"
                     alignItems="center"
+
+
                     gap={1}
                     px={2}
                     py={1}
@@ -74,9 +78,11 @@ export default function Herosection() {
                     <img
                       src={feature.icon}
                       alt={feature.text}
-                      style={{ height: "20px", width: "20px", color:'white' }}
+                      style={{ height: "20px", width: "20px" }}
                     />
-                    <Typography variant="caption" fontWeight="bold">
+                    <Typography variant="caption" fontWeight="bold" sx={{
+                      color: 'white'
+                    }} >
                       {feature.text}
                     </Typography>
                   </Box>
@@ -87,6 +93,7 @@ export default function Herosection() {
                 sx={{
                   display: "flex",
                   justifyContent: "space-evenly",
+                  flexWrap: 'wrap',
                   gap: 2,
                   p: 2,
                   mt: 4,
@@ -95,10 +102,10 @@ export default function Herosection() {
                 }}
               >
                 {[
-                  { value: "95%", label: "placement rate" },
-                  { value: "1200+", label: "Companies Hiring" },
-                  { value: "128%", label: "Average hike" },
-                  { value: "1.5 L+", label: "Learners" },
+                  { value: "100%", label: "placement rate" },
+                  { value: "500+", label: "Companies Hiring" },
+                  { value: "50%", label: "Average hike" },
+                  { value: "1.5 k+", label: "Learners" },
                 ].map((stat, index) => (
                   <React.Fragment key={index}>
                     <Box textAlign="center">
@@ -114,7 +121,7 @@ export default function Herosection() {
                 ))}
               </Paper>
               <Box display="flex" alignItems="center" mt={2}>
-                <Typography variant="body2" color="grey.400">
+                <Typography variant="body2" >
                   Know in-depth details in our free webinar
                 </Typography>
                 <img
@@ -127,14 +134,20 @@ export default function Herosection() {
           </Grid2>
 
           {/* Right Section */}
-          <Grid2 size ={ {xs:12, md:6 ,lg:6 }} display="flex" flexDirection="column">
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 4 }}>
+          <Grid2 size={{ xs: 12, md: 6, lg: 6 }} display="flex" flexDirection="column"  justifyContent={{xs:'center',md:'center',lg:'flex-start'}}>
+            <Paper elevation={3} sx={{
+              p: 4,
+              //  maxWidth: '28rem'
+              borderRadius: 5,
+            }}>
               <Typography variant="h6" fontWeight="bold" mb={2}>
                 Book a
                 <span style={{
                   background: "linear-gradient(to right, #FA00FF, #FF8A00)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
+
+
                 }}>
                   {" free live webinar "}
                 </span>
@@ -177,12 +190,44 @@ export default function Herosection() {
                     ),
                   }}
                 />
+                <FormControl>
+                  <Typography sx={{ fontSize: '14px' }}>
+                    Experience <span style={{ color: "red" }}>*</span>
+                  </Typography>
+
+
+                  <RadioGroup
+                    aria-labelledby="demo-radio-buttons-group-label"
+                    defaultValue="Working professional - Technical roles"
+                    name="radio-buttons-group"
+                  >
+                    {[
+                      "Working professional - Technical roles",
+                      "Working professional - Non technical",
+                      "College student - Final year",
+                      "College student - 1st to pre-final year",
+                      "Others",
+                    ].map((option, index) => (
+                      <FormControlLabel
+                        key={index}
+                        value={option}
+                        control={<Radio />}
+                        label={
+                          <Typography sx={{ fontSize: { xs: "0.8rem", sm: "0.85rem", lg: "0.9rem" }, fontWeight: "medium" }}>
+                            {option}
+                          </Typography>
+                        }
+                      />
+                    ))}
+                  </RadioGroup>
+                </FormControl>
+
                 <Button
                   type="submit"
                   fullWidth
                   variant="contained"
-                  
-                  sx={{ mt: 2, py: 1.5, fontWeight: "bold",color:'black' , bgcolor:'yellow' }}
+
+                  sx={{ mt: 2, py: 1.5, fontWeight: "bold", color: 'black', bgcolor: 'yellow' }}
                   endIcon={<ArrowRight />}
                 >
                   Continue booking webinar
@@ -192,6 +237,6 @@ export default function Herosection() {
           </Grid2>
         </Grid2>
       </Container>
-    </Box>
+    </Box >
   );
 }
