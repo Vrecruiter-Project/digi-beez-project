@@ -66,7 +66,7 @@ export default function Navbar() {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <hr />
+       
 
 
 
