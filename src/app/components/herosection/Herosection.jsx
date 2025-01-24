@@ -22,13 +22,24 @@ import flag from '../../../assets/herosection/flag.png';
 import Support from '../../../assets/herosection/support.svg'
 import Future from '../../../assets/herosection/future.svg'
 import Placement from '../../../assets/herosection/placement.svg'
+import bg from '../../../assets/herosection/herobg.jpg'
 
 
 export default function Herosection() {
   const theme = useTheme();
 
   return (
-    <Box display="flex" alignItems="center" justifyContent="center" mt={{ xs: 0, md: 6, lg: 2 }}>
+    <Box display="flex" alignItems="center" justifyContent="center" pt={{ xs: 0, md: 6, lg: 2 }} sx={{
+      backgroundImage: `url(${bg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      width: '100%',
+      pb: 10,
+    }}  >
+    
+        
+    
       <Container>
         <Grid2 container spacing={{ xs: 2, md: 6, lg: 10 }} alignItems="center" sx={
           {
@@ -47,10 +58,10 @@ export default function Herosection() {
                 gap: { xs: '3px', sm: '3px', md: '10px', lg: '18px' }
               }}
             >
-              <Typography variant="h4" fontWeight="bold" mt={2}>
+              <Typography variant="h4" fontWeight="bold" mt={2} color="white">
                 Full Stack Web Development Job Bootcamp
               </Typography>
-              <Typography variant="body1" mt={2}>
+              <Typography variant="body1" mt={2} color="white">
                 Choose MERN stack or Spring Boot and acquire expertise through
                 practical application and real-world projects.
               </Typography>
@@ -127,8 +138,8 @@ export default function Herosection() {
                   </>
                 ))}
               </Paper>
-              <Box display="flex" alignItems="center" mt={2}>
-                <Typography variant="body2" >
+              <Box sx={{display: { xs: 'none', sm: 'flex' }}} alignItems="center" mt={2} >
+                <Typography  variant="body2" color="white">
                   Know in-depth details in our free demo
                 </Typography>
                 <img
@@ -149,18 +160,19 @@ export default function Herosection() {
               boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.15)',
 
             }}>
-              <Typography variant="h6" fontWeight="bold" mb={2}>
-                Book a
-                <span style={{
+              <Typography  fontWeight="bold" mb={2} >
+              <span className="text-[13px] sm:text-[18px]">Book a</span>
+                <span className="text-[13px] sm:text-[18px]" style={{
                   background: "linear-gradient(to right, #FA00FF, #FF8A00)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-
+                 
 
                 }}>
                   {"    free demo class "}
                 </span>
-                <span style={{ fontSize: '13px', color: 'gray' }}>to know more</span>
+                <span className="text-[10px] sm:text-[14px] text-gray-500">to know more</span>
+               
               </Typography>
               <form>
                 <Typography sx={{ fontSize: '12px' }}>
@@ -170,7 +182,7 @@ export default function Herosection() {
                   label="Enter Name"
                   fullWidth
                   required
-                  // variant="outlined"
+           
                   size="small"
                   sx={{
                     mb: '9px'
@@ -253,9 +265,11 @@ export default function Herosection() {
                 </FormControl>
 
                 <Button
+                className="bg-[#FCC41B] text-black font-bold py-1.5 px-2 rounded-lg"
                   type="submit"
                   fullWidth
                   variant="contained"
+
 
                   sx={{
                     mt: 2,
