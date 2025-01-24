@@ -13,7 +13,6 @@ import {
   ThemeProvider,
   createTheme
 } from '@mui/material';
-
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
@@ -37,18 +36,18 @@ export default function Navbar() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar 
-        position="static" 
+      <AppBar
+        position="static"
         sx={{ backgroundColor: 'transparent', boxShadow: 'none' }} // Transparent background
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
             {/* Left Side: Image Logo */}
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <img 
-                src={mode === 'light' ? LogoLight : LogoDark}    
+              <img
+                src={mode === 'light' ? LogoLight : LogoDark}
                 alt="Logo"
-                style={{ height: '100px', cursor: 'pointer' }} 
+                style={{ width: '100px', cursor: 'pointer' }}
               />
             </Box>
 
@@ -57,8 +56,8 @@ export default function Navbar() {
               <Button variant="contained" color="secondary">
                 Book a Free Demo
               </Button>
-              <IconButton 
-                onClick={toggleTheme} 
+              <IconButton
+                onClick={toggleTheme}
                 color={mode === 'light' ? 'black' : 'inherit'} // Black icon in light mode
                 sx={{ mx: 1 }}
               >
@@ -68,6 +67,10 @@ export default function Navbar() {
           </Toolbar>
         </Container>
       </AppBar>
+      <hr />
+
+
+
     </ThemeProvider>
   );
 }
