@@ -40,20 +40,19 @@ export default function Navbar() {
         position="static"
         sx={{ backgroundColor: 'transparent', boxShadow: 'none' }} // Transparent background
       >
-        <Container maxWidth="xl">
+        <Container>
           <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
             {/* Left Side: Image Logo */}
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <img
-                src={mode === 'light' ? LogoLight : LogoDark}
-                alt="Logo"
-                style={{ width: '100px', cursor: 'pointer' }}
-              />
-            </Box>
+            <img
+  src={mode === 'light' ? LogoLight : LogoDark}
+  alt="Logo"
+  style={{ height: '54px', width: 'auto', cursor: 'pointer' }}
+/>
+
 
             {/* Right Side: Dark Mode Toggle & Book a Free Demo Button */}
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <Button variant="contained" color="secondary">
+              <Button variant="contained" sx={{backgroundColor:"#FCC41B"}}>
                 Book a Free Demo
               </Button>
               <IconButton
