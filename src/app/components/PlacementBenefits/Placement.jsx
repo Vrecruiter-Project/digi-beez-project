@@ -45,7 +45,7 @@ const PlacementBenefits = () => {
   return (
     <Container>
     <Box sx={{ textAlign: "center", py: 5 }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" fontWeight="bold" mb={7} >
         Placement Benefits
       </Typography>
       <Grid container spacing={3} justifyContent="center">
@@ -71,7 +71,7 @@ const PlacementBenefits = () => {
           </Grid>
         ))}
       </Grid>
-      <Button variant="contained" color="warning" sx={{ mt: 3 }}>
+      <Button variant="contained" sx={{ mt: 5 ,    bgcolor: '#FCC41B', color: '#000',}}>
         Book a Free Demo
       </Button>
     </Box>

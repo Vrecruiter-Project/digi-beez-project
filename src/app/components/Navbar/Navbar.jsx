@@ -37,11 +37,16 @@ export default function Navbar() {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <AppBar
-                position="static"
-                sx={{ backgroundColor: 'transparent', py:"5px" }} // Transparent background
+                position="fixed" 
+                sx={{
+                    backgroundColor: mode === 'light' ? '#ffffff' : '#121212',
+                    boxShadow: mode === 'light' ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : '0px 4px 12px rgba(0, 0, 0, 0.6)',
+                    backdropFilter: 'blur(10px)',
+                    zIndex: 1300,
+                }}
             >
                 <Container>
-                    <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between', py: 1 }}>
                         {/* Left Side: Image Logo */}
                         <img
                             src={mode === 'light' ? LogoLight : LogoDark}
@@ -49,16 +54,32 @@ export default function Navbar() {
                             style={{ height: '50px', width: 'auto', cursor: 'pointer' }}
                         />
 
-
                         {/* Right Side: Dark Mode Toggle & Book a Free Demo Button */}
                         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                            <Button variant="contained" sx={{ backgroundColor: "#FCC41B", display: { xs: 'none', sm: 'block' } }}>
+                            <Button
+                                variant="contained"
+                                sx={{
+                                    backgroundColor: '#FCC41B',
+                                    color: '#000',
+                                    px: 3,
+                                 
+                                    display: { xs: 'none', sm: 'block' },
+                                    // '&:hover': {
+                                    //     backgroundColor: '#e6b218',
+                                    // },
+                                }}
+                            >
                                 Book a Free Demo
                             </Button>
                             <IconButton
                                 onClick={toggleTheme}
-                                color={mode === 'light' ? 'black' : 'inherit'} // Black icon in light mode
-                                sx={{ mx: 1 }}
+                                sx={{
+                                    color: mode === 'light' ? '#000' : '#fff',
+                                    mx: 1,
+                                    '&:hover': {
+                                        color: mode === 'light' ? '#555' : '#ddd',
+                                    },
+                                }}
                             >
                                 {mode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
                             </IconButton>
@@ -66,10 +87,6 @@ export default function Navbar() {
                     </Toolbar>
                 </Container>
             </AppBar>
-       
-
-
-
         </ThemeProvider>
     );
 }

@@ -38,17 +38,16 @@ export default function Herosection() {
       pb: 10,
     }}  >
     
-        
-    
-      <Container>
+      <Container >
         <Grid2 container spacing={{ xs: 2, md: 6, lg: 10 }} alignItems="center" sx={
           {
             display: 'flex',
-            flexDirection: { xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row' }
+            flexDirection: { xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row' },
+            mt: 6,
           }
         }  >
           {/* Left Section */}
-          <Grid2 size={{ xs: 12, md: 6, lg: 6 }} display="flex" flexDirection="column" >
+          <Grid2 size={{ xs: 12, md: 7, lg: 7 }} display="flex" flexDirection="column" >
             <Box
               mt={4}
               // mb={10}
@@ -152,7 +151,7 @@ export default function Herosection() {
           </Grid2>
 
           {/* Right Section */}
-          <Grid2 size={{ xs: 12, md: 6, lg: 6 }} display="flex" flexDirection="column" justifyContent={{ xs: 'center', md: 'center', lg: 'flex-start' }}>
+          <Grid2 size={{ xs: 12, md: 5, lg: 5 }} display="flex" flexDirection="column" justifyContent={{ xs: 'center', md: 'center', lg: 'flex-start' }}>
             <Paper elevation={{ xs: 0, md: 3, lg: 3 }} sx={{
               p: 4,
               mt: 5,
@@ -163,7 +162,7 @@ export default function Herosection() {
               <Typography  fontWeight="bold" mb={2} >
               <span className="text-[13px] sm:text-[18px]">Book a</span>
                 <span className="text-[13px] sm:text-[18px]" style={{
-                  background: "linear-gradient(to right, #FA00FF, #FF8A00)",
+                  background: "linear-gradient(to right, #FCC41B , #FA00FF)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                  
@@ -179,7 +178,7 @@ export default function Herosection() {
                   Name <span style={{ color: "red" }}>*</span>
                 </Typography>
                 <TextField
-                  label="Enter Name"
+                  
                   fullWidth
                   required
            
@@ -194,7 +193,7 @@ export default function Herosection() {
                 </Typography>
 
                 <TextField
-                  label="Enter Email"
+                  
                   type="email"
                   fontSize='12px'
                   fullWidth
