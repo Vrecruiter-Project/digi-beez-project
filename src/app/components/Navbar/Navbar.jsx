@@ -27,6 +27,9 @@ export default function Navbar() {
 
     const theme = createTheme({
         palette: { mode: mode },
+        typography: {
+            fontFamily: '"Mulish", sans-serif', // Apply Mulish globally
+        }
     });
 
     const toggleTheme = () => {
