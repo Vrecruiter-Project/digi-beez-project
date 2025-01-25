@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import LogoLight from '../../../assets/NavbarLogo/trace.png';
 import LogoDark from '../../../assets/NavbarLogo/trace(4).png';
-
 import {
     AppBar,
     Toolbar,
