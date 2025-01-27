@@ -177,8 +177,8 @@ export default function TrustLove() {
       >
         Voices of trust & love
       </Typography>
-      <Box sx={{  display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mb: 3, }}>
-        <AppBar position="static" sx={{ borderRadius: '10px', width: { xs: "100%", md: "50%" } ,mb: 6, }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mb: 3, }}>
+        <AppBar position="static" sx={{ borderRadius: '10px', width: { xs: "100%", md: "50%" }, mb: 6, }}>
           <Tabs sx={{
             bgcolor: "black",
             color: "white",
@@ -193,7 +193,7 @@ export default function TrustLove() {
             aria-label="full width tabs example"
           >
             <Tab
-              label="Non-tech to tech" {...a11yProps(0)} sx={{fontSize: { xs: "10px", md: "13px" } }}
+              label="Non-tech to tech" {...a11yProps(0)} sx={{ fontSize: { xs: "10px", md: "13px" } }}
             />
             <Tab sx={{ fontSize: { xs: "10px", md: '13px' } }} label="Service to product" {...a11yProps(1)} />
             <Tab sx={{ fontSize: { xs: "10px", md: '13px' } }} label="Landed the first job" {...a11yProps(2)} />
@@ -264,7 +264,7 @@ export default function TrustLove() {
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
 
-          <Grid container spacing={{ xs: 8, md: 3 }}  justifyContent="center" m={{ xs: 0, md: 4 }} >
+          <Grid container spacing={{ xs: 8, md: 3 }} justifyContent="center" m={{ xs: 0, md: 4 }} >
             {twotab.map((testimonial, index) => (
               <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index} >
                 <Card
@@ -275,7 +275,7 @@ export default function TrustLove() {
                     borderRadius: "16px",
                     textAlign: "center",
                     position: "relative", overflow: "visible",
-                   
+
 
                   }}
                 >
@@ -325,7 +325,7 @@ export default function TrustLove() {
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
 
-          <Grid container spacing={{ xs: 8, md: 3 }}  justifyContent="center" m={{ xs: 0, md: 4 }} >
+          <Grid container spacing={{ xs: 8, md: 3 }} justifyContent="center" m={{ xs: 0, md: 4 }} >
             {threetab.map((testimonial, index) => (
               <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index} >
                 <Card
@@ -336,7 +336,7 @@ export default function TrustLove() {
                     borderRadius: "16px",
                     textAlign: "center",
                     position: "relative", overflow: "visible",
-                    
+
                   }}
                 >
                   <Avatar
@@ -381,8 +381,12 @@ export default function TrustLove() {
             ))}
           </Grid>
 
-        </TabPanel>
+        </TabPanel>  
+         <Button variant="contained" sx={{ mt: 4, bgcolor: '#FCC41B', color: '#000', }}>
+        Book a Free Demo
+      </Button>
       </Box >
+   
     </Container>
 
 
