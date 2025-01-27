@@ -67,7 +67,7 @@ export default function TrustLove() {
   }
   const onetab = [
     {
-      name: "Samir Sayyed",
+      name: "Om Sayyed",
       title: "Product Engineer",
       description:
         "As I wanted to switch my career from Mechanical to IT, I joined bootcamp. My goal was to learn full stack development and get placed in a good company with a good package. After completing this bootcamp you will be capable of cracking any interview and ready to work.",
@@ -113,7 +113,7 @@ export default function TrustLove() {
     },
 
     {
-      name: "Manikanta Sura",
+      name: "Sourav Sura",
       title: "Application Management Analyst",
       description:
         "I was inspired by the way things were explained during the 1st session which boosted my confidence. My goal was to have good technical knowledge to transform my career. It was overall a very good support and helped me to gain a new job.",
@@ -157,7 +157,7 @@ export default function TrustLove() {
     },
 
     {
-      name: "Rashid Khan",
+      name: "Ayush Khan",
       title: "Senior Software Engineer",
       description:
         "Before joining the bootcamp I was trying to learn development on my own but I was always hitting a dead end. CN helped me figure out what exactly I needed to learn to be a good developer and get a job. The program was very well organised. It motivated me to be consistent and study.",
