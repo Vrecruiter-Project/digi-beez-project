@@ -37,7 +37,7 @@ export default function Herosection() {
       width: '100%',
       pb: 10,
     }}  >
-
+    
       <Container >
         <Grid2 container spacing={{ xs: 2, md: 6, lg: 10 }} alignItems="center" sx={
           {
@@ -137,8 +137,8 @@ export default function Herosection() {
                   </>
                 ))}
               </Paper>
-              <Box sx={{ display: { xs: 'none', sm: 'flex' } }} alignItems="center" mt={2} >
-                <Typography variant="body2" color="white">
+              <Box sx={{display: { xs: 'none', sm: 'flex' }}} alignItems="center" mt={2} >
+                <Typography  variant="body2" color="white">
                   Know in-depth details in our free demo
                 </Typography>
                 <img
@@ -159,29 +159,29 @@ export default function Herosection() {
               boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.15)',
 
             }}>
-              <Typography fontWeight="bold" mb={2} >
-                <span className="text-[13px] sm:text-[18px]">Book a</span>
+              <Typography  fontWeight="bold" mb={2} >
+              <span className="text-[13px] sm:text-[18px]">Book a</span>
                 <span className="text-[13px] sm:text-[18px]" style={{
                   background: "linear-gradient(to right, #FCC41B , #FA00FF)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-
+                 
 
                 }}>
                   {"    free demo class "}
                 </span>
                 <span className="text-[10px] sm:text-[14px] text-gray-500">to know more</span>
-
+               
               </Typography>
               <form>
                 <Typography sx={{ fontSize: '12px' }}>
                   Name <span style={{ color: "red" }}>*</span>
                 </Typography>
                 <TextField
-
+                  
                   fullWidth
                   required
-
+           
                   size="small"
                   sx={{
                     mb: '9px'
@@ -193,7 +193,7 @@ export default function Herosection() {
                 </Typography>
 
                 <TextField
-
+                  
                   type="email"
                   fontSize='12px'
                   fullWidth
@@ -264,13 +264,16 @@ export default function Herosection() {
                 </FormControl>
 
                 <Button
-                  className="bg-[#FCC41B] text-black font-bold py-1.5 px-2 rounded-lg"
+                className="bg-[#FCC41B] text-black font-bold py-1.5 px-2 rounded-lg"
                   type="submit"
                   fullWidth
                   variant="contained"
+
+
                   sx={{
                     mt: 2,
                     py: 1.5,
+                    fontWeight: 'bold',
                     color: 'black',
                     bgcolor: '#FCC41B',
                     fontSize: { xs: '10px', md: '12px', lg: '13px' },

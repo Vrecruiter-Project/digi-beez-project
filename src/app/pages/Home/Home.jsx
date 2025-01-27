@@ -4,7 +4,7 @@ import Coursebrocher from '../../components/CourseBrocher/Coursebrocher';
 import Navbar from '../../components/Navbar/Navbar';
 import PlacementBenefits from '../../components/PlacementBenefits/Placement';
 import CourseBenefits from '../../components/CourseBenefits/Benefits';
-import TestimonialsSection from '../../components/Trust&Love/Trustlove';
+import Trustlove from '../../components/Trust&Love/Trustlove'
 export default function Home() {
   return (
     <>
@@ -13,7 +13,7 @@ export default function Home() {
         <Coursebrocher/>
         <PlacementBenefits/>
         <CourseBenefits/>
-        <TestimonialsSection/>
+        <Trustlove/>
 
 
     </>
