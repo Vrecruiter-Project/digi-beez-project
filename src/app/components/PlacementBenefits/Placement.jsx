@@ -48,7 +48,7 @@ const PlacementBenefits = () => {
       <Typography variant="h4" fontWeight="bold" mb={7} >
         Placement Benefits
       </Typography>
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={1} justifyContent="center">
         {benefits.map((benefit, index) => (
           <Grid size= {{xs:12, sm:6, md:4}} key={index}>
          

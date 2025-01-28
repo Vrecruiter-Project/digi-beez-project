@@ -37,7 +37,7 @@ export default function Herosection() {
       width: '100%',
       pb: 10,
     }}  >
-    
+
       <Container >
         <Grid2 container spacing={{ xs: 2, md: 6, lg: 10 }} alignItems="center" sx={
           {
@@ -64,28 +64,17 @@ export default function Herosection() {
                 Choose MERN stack or Spring Boot and acquire expertise through
                 practical application and real-world projects.
               </Typography>
-              <Box display="flex" flexWrap="wrap" justify-content='center' gap={2} mt={2}>
-                {[
-                  {
-                    icon: Support,
-                    text: "Placement assistance",
-                  },
-                  {
-                    icon: Future,
-                    text: "AI-infused curriculum",
-                  },
-                  {
-                    icon: Placement,
-                    text: "1:1 mentorship",
-                  },
 
+              <Box display="flex" flexWrap="wrap" justifyContent="center" gap={2} mt={2}>
+                {[
+                  { icon: Support, text: "Placement assistance" },
+                  { icon: Future, text: "AI-infused curriculum" },
+                  { icon: Placement, text: "1:1 mentorship" },
                 ].map((feature, index) => (
                   <Box
-                    key={index}
+                    key={`feature-${index}`}
                     display="flex"
                     alignItems="center"
-
-
                     gap={1}
                     px={2}
                     py={1}
@@ -97,34 +86,20 @@ export default function Herosection() {
                       alt={feature.text}
                       style={{ height: "20px", width: "20px" }}
                     />
-                    <Typography variant="caption" fontWeight="bold" sx={{
-                      color: 'white'
-                    }} >
+                    <Typography variant="caption" fontWeight="bold" sx={{ color: 'white' }}>
                       {feature.text}
                     </Typography>
                   </Box>
                 ))}
               </Box>
-              <Paper
-                elevation={3}
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-evenly",
-                  flexWrap: 'wrap',
-                  gap: 2,
-                  p: 2,
-                  mt: 4,
-                  borderRadius: 3,
-                  backgroundColor: theme.palette.grey[900],
-                }}
-              >
+              <Paper sx={{ display: "flex", justifyContent: "space-evenly", flexWrap: 'wrap', gap: 2, p: 2, mt: 4, borderRadius: 3, backgroundColor: "#212121 "}}>
                 {[
                   { value: "100%", label: "placement rate" },
                   { value: "500+", label: "Companies Hiring" },
                   { value: "50%", label: "Average hike" },
-                  { value: "1.5 k+", label: "Learners" },
+                  { value: "1.5k+", label: "Learners" },
                 ].map((stat, index) => (
-                  <>
+                  <React.Fragment key={`stat-${index}`}>
                     <Box textAlign="center">
                       <Typography variant="h6" fontWeight="bold" color="white">
                         {stat.value}
@@ -133,12 +108,13 @@ export default function Herosection() {
                         {stat.label}
                       </Typography>
                     </Box>
-                    {index < 3 && <Divider orientation="vertical" flexItem sx={{ bgcolor: "grey.700" }} />}
-                  </>
+                    {index < 3 && <Divider key={`divider-${index}`} orientation="vertical" flexItem sx={{ bgcolor: "grey.700" }} />}
+                  </React.Fragment>
                 ))}
               </Paper>
-              <Box sx={{display: { xs: 'none', sm: 'flex' }}} alignItems="center" mt={2} >
-                <Typography  variant="body2" color="white">
+
+              <Box sx={{ display: { xs: 'none', sm: 'flex' } }} alignItems="center" mt={2} >
+                <Typography variant="body2" color="white">
                   Know in-depth details in our free demo
                 </Typography>
                 <img
@@ -152,36 +128,36 @@ export default function Herosection() {
 
           {/* Right Section */}
           <Grid2 size={{ xs: 12, md: 5, lg: 5 }} display="flex" flexDirection="column" justifyContent={{ xs: 'center', md: 'center', lg: 'flex-start' }}>
-            <Paper elevation={{ xs: 0, md: 3, lg: 3 }} sx={{
+            <Paper  sx={{
               p: 4,
               mt: 5,
               borderRadius: 5,
               boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.15)',
 
             }}>
-              <Typography  fontWeight="bold" mb={2} >
-              <span className="text-[13px] sm:text-[18px]">Book a</span>
+              <Typography fontWeight="bold" mb={2} >
+                <span className="text-[13px] sm:text-[18px]">Book a</span>
                 <span className="text-[13px] sm:text-[18px]" style={{
                   background: "linear-gradient(to right, #FCC41B , #FA00FF)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                 
+
 
                 }}>
                   {"    free demo class "}
                 </span>
                 <span className="text-[10px] sm:text-[14px] text-gray-500">to know more</span>
-               
+
               </Typography>
               <form>
                 <Typography sx={{ fontSize: '12px' }}>
                   Name <span style={{ color: "red" }}>*</span>
                 </Typography>
                 <TextField
-                  
+
                   fullWidth
                   required
-           
+
                   size="small"
                   sx={{
                     mb: '9px'
@@ -193,7 +169,7 @@ export default function Herosection() {
                 </Typography>
 
                 <TextField
-                  
+
                   type="email"
                   fontSize='12px'
                   fullWidth
@@ -231,12 +207,11 @@ export default function Herosection() {
                     ),
                   }}
                 />
+
                 <FormControl>
                   <Typography sx={{ fontSize: '14px' }}>
                     Experience <span style={{ color: "red" }}>*</span>
                   </Typography>
-
-
                   <RadioGroup
                     aria-labelledby="demo-radio-buttons-group-label"
                     defaultValue="Working professional - Technical roles"
@@ -250,7 +225,7 @@ export default function Herosection() {
                       "Others",
                     ].map((option, index) => (
                       <FormControlLabel
-                        key={index}
+                        key={`experience-${index}`}
                         value={option}
                         control={<Radio />}
                         label={
@@ -264,7 +239,7 @@ export default function Herosection() {
                 </FormControl>
 
                 <Button
-                className="bg-[#FCC41B] text-black font-bold py-1.5 px-2 rounded-lg"
+                  className="bg-[#FCC41B] text-black font-bold py-1.5 px-2 rounded-lg"
                   type="submit"
                   fullWidth
                   variant="contained"

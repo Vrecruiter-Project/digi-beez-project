@@ -16,12 +16,9 @@ import { useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import { WidthFull } from '@mui/icons-material';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
-
 
 
   return (
@@ -173,7 +170,7 @@ export default function TrustLove() {
     <Container>
       <Typography
         variant="h4"
-        sx={{ textAlign: "center", fontWeight: "bold", mb: 4 }}
+        sx={{ textAlign: "center", fontWeight: "bold", mb: 4, mt: 5 }}
       >
         Voices of trust & love
       </Typography>
@@ -381,12 +378,12 @@ export default function TrustLove() {
             ))}
           </Grid>
 
-        </TabPanel>  
-         <Button variant="contained" sx={{ mt: 4, bgcolor: '#FCC41B', color: '#000', }}>
-        Book a Free Demo
-      </Button>
+        </TabPanel>
+        <Button variant="contained" sx={{ mt: 4, bgcolor: '#FCC41B', color: '#000', }}>
+          Book a Free Demo
+        </Button>
       </Box >
-   
+
     </Container>
 
 

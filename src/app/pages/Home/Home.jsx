@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import PlacementBenefits from '../../components/PlacementBenefits/Placement';
 import CourseBenefits from '../../components/CourseBenefits/Benefits';
 import Trustlove from '../../components/Trust&Love/Trustlove'
+import Learners from '../../components/Learners/Learners'
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
         <PlacementBenefits/>
         <CourseBenefits/>
         <Trustlove/>
+        <Learners/>
 
 
     </>
