@@ -12,6 +12,7 @@ import OurExperience from '../../components/OurExperience/OurExperience';
 export default function Home() {
   return (
     <>
+      Ayush
       <Navbar />
       <Herosection />
       <Coursebrocher />
