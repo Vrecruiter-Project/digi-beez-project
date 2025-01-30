@@ -16,6 +16,7 @@ import { useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import design from '../../../../src/assets/Card/card-design.png'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -213,6 +214,12 @@ export default function TrustLove() {
                     overflow: "visible",
                   }}
                 >
+                  <img
+                    src={design}
+                    style={{ position: 'absolute', top: '0px', height: '4em' }}
+
+                  />
+
                   <Avatar
                     src={testimonial.avatar}
                     sx={{
@@ -256,8 +263,6 @@ export default function TrustLove() {
             ))}
           </Grid>
 
-
-
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
 
@@ -276,6 +281,12 @@ export default function TrustLove() {
 
                   }}
                 >
+                  <img
+                    src={design}
+                    style={{ position: 'absolute', top: '0px', height: '4em' }}
+
+                  />
+
                   <Avatar
                     src={testimonial.avatar}
                     sx={{
@@ -336,6 +347,12 @@ export default function TrustLove() {
 
                   }}
                 >
+                  <img
+                    src={design}
+                    style={{ position: 'absolute', top: '0px', height: '4em' }}
+
+                  />
+
                   <Avatar
                     src={testimonial.avatar}
                     sx={{

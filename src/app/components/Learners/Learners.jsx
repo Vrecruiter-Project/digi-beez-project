@@ -30,6 +30,7 @@ const instructors = [
     teaches: ["Blocks in C++", "Basics of Java", "Basics of Python"],
     linkedIn: "",
     companies: ["Google", "IIIT"],
+    
   },
 ];
 

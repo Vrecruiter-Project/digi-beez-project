@@ -6,16 +6,21 @@ import PlacementBenefits from '../../components/PlacementBenefits/Placement';
 import CourseBenefits from '../../components/CourseBenefits/Benefits';
 import Trustlove from '../../components/Trust&Love/Trustlove'
 import Learners from '../../components/Learners/Learners'
+import Benefits from '../../components/beyondlearning/Benefits';
+import PlansAndPricing from '../../components/Plans/Plans';
 export default function Home() {
   return (
     <>
-    <Navbar/>
-        <Herosection/>
-        <Coursebrocher/>
-        <PlacementBenefits/>
-        <CourseBenefits/>
-        <Trustlove/>
-        <Learners/>
+      <Navbar />
+      <Herosection />
+      <Coursebrocher />
+      <PlacementBenefits />
+      <CourseBenefits />
+      <Benefits />
+      <Trustlove />
+      <Learners />
+      <PlansAndPricing />
+
 
 
     </>
