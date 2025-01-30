@@ -20,7 +20,7 @@ export default function Home() {
       <Trustlove />
       <Learners />
       <PlansAndPricing />
-
+ayush
 
 
     </>
