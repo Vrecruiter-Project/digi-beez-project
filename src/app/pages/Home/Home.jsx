@@ -12,7 +12,7 @@ import OurExperience from '../../components/OurExperience/OurExperience';
 export default function Home() {
   return (
     <>
-      Ayush
+      
       <Navbar />
       <Herosection />
       <Coursebrocher />
@@ -23,6 +23,7 @@ export default function Home() {
       <Learners />
       <OurExperience/>
       <PlansAndPricing />
+      Ayush
 </>
   )
 }
