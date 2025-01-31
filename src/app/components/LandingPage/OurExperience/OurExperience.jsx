@@ -13,7 +13,7 @@ const data = [
 const OurExperience = () => {
     return (
         <Box sx={{ textAlign: "center", p: 4 }}>
-            <Typography variant="h4" fontWeight="bold" gutterBottom>
+            <Typography variant="h4" fontWeight="bold" sx={{ fontSize: { xs: "1.7rem", md: "2rem" }, mb: 4 }}>
                 Our learners bring varied backgrounds and experiences
             </Typography>
             <Box

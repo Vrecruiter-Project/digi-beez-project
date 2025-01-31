@@ -16,7 +16,7 @@ import { useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import design from '../../../../src/assets/Card/card-design.png'
+import design from '../../../../assets/Card/card-design.png'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

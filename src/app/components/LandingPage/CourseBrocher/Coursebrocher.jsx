@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid2'
 import {Box,  Button,  Container,  Typography } from '@mui/material';
 import PlacementSwiper from '../CoursesSwiper/PlacementSwiper';
-import flagImg from "../../../assets/herosection/flag.png";
+import flagImg from "../../../../assets/herosection/flag.png";
 
 const Coursebrocher = () => {
   const buttonContent = [

@@ -1,12 +1,11 @@
 import React from "react";
-import { Box, Grid, Card, CardContent, Typography, Container } from "@mui/material";
+import { Box,  Card, CardContent, Typography, Container } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DescriptionIcon from "@mui/icons-material/Description";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 import PeopleIcon from "@mui/icons-material/People";
-
-
+import Grid from '@mui/material/Grid2';
 
 const benefits1 = [
   { icon: <GitHubIcon sx={{ fontSize: 40, color: "#4CAF50" }} />, title: "Github profile" },
@@ -29,7 +28,7 @@ const Benefits = () => {
         </Typography>
         <Grid container spacing={3} justifyContent="center">
           {benefits1.map((benefit, index) => (
-            <Grid item xs={12} sm={4} md={4} key={index}>
+            <Grid size = {{xs:12,sm:4 ,md:4}}  key={index}>
               <Card sx={{ bgcolor: "#1E1E1E", color: "#fff", textAlign: "center", p: 2, borderRadius: 3, boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.4)", }}>
                 <CardContent>
                   {benefit.icon}
@@ -47,10 +46,10 @@ const Benefits = () => {
           ))}
         </Grid>
 
-        <Grid container spacing={2} item={12} justifyContent="center" sx={{ mt: '1px' }}>
+        <Grid container spacing={2} size={12} justifyContent="center" sx={{ mt: '13px' }}>
           {benefits2.map((benefit, index) => (
-            <Grid spacing={3} item xs={12} sm={6} md={6} key={index}>
-              <Card sx={{ bgcolor: "#1E1E1E", color: "#fff", textAlign: "center", p: 2, borderRadius: 3 ,    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.4)", }}>
+            <Grid spacing={3} size = {{xs:12,sm:6 ,md:6}} key={index}>
+              <Card sx={{ bgcolor: "#1E1E1E", color: "#fff", textAlign: "center", p: 2, borderRadius: 3, boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.4)", }}>
                 <CardContent>
                   {benefit.icon}
                   <Typography variant="h6" sx={{ mt: 1 }}>

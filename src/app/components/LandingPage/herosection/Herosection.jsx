@@ -1,28 +1,19 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
 import {
   Box,
-  Button,
   Container,
   Divider,
-  IconButton,
-  InputAdornment,
   Paper,
-  TextField,
   Typography,
   useTheme,
 } from "@mui/material";
 import Grid2 from '@mui/material/Grid2';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import Radio from '@mui/material/Radio';
-import hand from '../../../assets/herosection/hand_.webp';
-import flag from '../../../assets/herosection/flag.png';
-import Support from '../../../assets/herosection/support.svg'
-import Future from '../../../assets/herosection/future.svg'
-import Placement from '../../../assets/herosection/placement.svg'
-import bg from '../../../assets/herosection/herobg.jpg'
+import hand from '../../../../assets/herosection/hand_.webp';
+import Support from '../../../../assets/herosection/support.svg'
+import Future from '../../../../assets/herosection/future.svg'
+import Placement from '../../../../assets/herosection/placement.svg'
+import bg from '../../../../assets/herosection/herobg.jpg'
+import Form from '../../Form/Form'
 
 
 export default function Herosection() {
@@ -92,7 +83,7 @@ export default function Herosection() {
                   </Box>
                 ))}
               </Box>
-              <Paper sx={{ display: "flex", justifyContent: "space-evenly", flexWrap: 'wrap', gap: 2, p: 2, mt: 4, borderRadius: 3, backgroundColor: "#212121 "}}>
+              <Paper sx={{ display: "flex", justifyContent: "space-evenly", flexWrap: 'wrap', gap: 2, p: 2, mt: 4, borderRadius: 3, backgroundColor: "#212121 " }}>
                 {[
                   { value: "100%", label: "placement rate" },
                   { value: "500+", label: "Companies Hiring" },
@@ -128,7 +119,7 @@ export default function Herosection() {
 
           {/* Right Section */}
           <Grid2 size={{ xs: 12, md: 5, lg: 5 }} display="flex" flexDirection="column" justifyContent={{ xs: 'center', md: 'center', lg: 'flex-start' }}>
-            <Paper  sx={{
+            <Paper sx={{
               p: 4,
               mt: 5,
               borderRadius: 5,
@@ -149,117 +140,7 @@ export default function Herosection() {
                 <span className="text-[10px] sm:text-[14px] text-gray-500">to know more</span>
 
               </Typography>
-              <form>
-                <Typography sx={{ fontSize: '12px' }}>
-                  Name <span style={{ color: "red" }}>*</span>
-                </Typography>
-                <TextField
-
-                  fullWidth
-                  required
-
-                  size="small"
-                  sx={{
-                    mb: '9px'
-                  }}
-
-                />
-                <Typography sx={{ fontSize: '12px' }}>
-                  Email <span style={{ color: "red" }}>*</span>
-                </Typography>
-
-                <TextField
-
-                  type="email"
-                  fontSize='12px'
-                  fullWidth
-                  required
-                  variant="outlined"
-                  size="small"
-                  sx={{
-                    mb: '9px',
-
-                  }}
-
-                />
-                <Typography sx={{ fontSize: '12px' }}>
-                  Phone Number <span style={{ color: "red" }}>*</span>
-                </Typography>
-                <TextField
-
-                  fullWidth
-                  required
-                  variant="outlined"
-                  size="small"
-                  sx={{
-                    mb: '9px'
-                  }}
-
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <img
-                          src={flag}
-                          alt="Indian Flag"
-                          style={{ height: "20px", width: "20px" }}
-                        />
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-
-                <FormControl>
-                  <Typography sx={{ fontSize: '14px' }}>
-                    Experience <span style={{ color: "red" }}>*</span>
-                  </Typography>
-                  <RadioGroup
-                    aria-labelledby="demo-radio-buttons-group-label"
-                    defaultValue="Working professional - Technical roles"
-                    name="radio-buttons-group"
-                  >
-                    {[
-                      "Technical roles",
-                      "Non technical",
-                      "Final year student",
-                      "1st to pre-final year student",
-                      "Others",
-                    ].map((option, index) => (
-                      <FormControlLabel
-                        key={`experience-${index}`}
-                        value={option}
-                        control={<Radio />}
-                        label={
-                          <Typography sx={{ fontSize: { xs: "0.8rem", sm: "0.85rem", lg: "0.9rem" }, fontWeight: "medium" }}>
-                            {option}
-                          </Typography>
-                        }
-                      />
-                    ))}
-                  </RadioGroup>
-                </FormControl>
-
-                <Button
-                  className="bg-[#FCC41B] text-black font-bold py-1.5 px-2 rounded-lg"
-                  type="submit"
-                  fullWidth
-                  variant="contained"
-
-
-                  sx={{
-                    mt: 2,
-                    py: 1.5,
-                    fontWeight: 'bold',
-                    color: 'black',
-                    bgcolor: '#FCC41B',
-                    fontSize: { xs: '10px', md: '12px', lg: '13px' },
-                    borderRadius: "9px"
-                  }}
-
-                  endIcon={<ArrowRight />}
-                >
-                  Booking Free Demo Class
-                </Button>
-              </form>
+              <Form />
             </Paper>
           </Grid2>
         </Grid2>
