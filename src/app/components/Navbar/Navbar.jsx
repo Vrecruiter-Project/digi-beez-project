@@ -17,47 +17,51 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 
 export default function Navbar() {
     // Get stored theme mode or default to 'light'
-    // const getStoredTheme = () => localStorage.getItem('themeMode') || 'light';
-    // const [mode, setMode] = useState(getStoredTheme);
+    const getStoredTheme = () => localStorage.getItem('themeMode') || 'light';
+    const [mode, setMode] = useState(getStoredTheme);
 
-    // useEffect(() => {
-    //     localStorage.setItem('themeMode', mode);
-    // }, [mode]);
+    useEffect(() => {
+        localStorage.setItem('themeMode', mode);
+    }, [mode]);
 
-    // const theme = createTheme({
-    //     palette: { mode: mode },
-    //     typography: {
-    //         fontFamily: '"Mulish", sans-serif',
-    //     }
-    // });
+    const theme = createTheme({
+        palette: { mode: mode },
+        typography: {
+            fontFamily: '"Mulish", sans-serif',
+        }
+    });
 
-    // const toggleTheme = () => {
-    //     setMode(mode === 'light' ? 'dark' : 'light');
-    // };
+    const toggleTheme = () => {
+        setMode(mode === 'light' ? 'dark' : 'light');
+    };
 
     return (
-        // <ThemeProvider theme={theme}>
-           // <CssBaseline />
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
             <AppBar
-                position="fixed" 
+                position="fixed"
                 sx={{
-                    //backgroundColor: mode === 'light' ? '#ffffff' : '#121212',
-                    //boxShadow: mode === 'light' ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : '0px 4px 12px rgba(0, 0, 0, 0.6)',
-                    backgroundColor: '#ffffff',
+                    backgroundColor: mode === 'light' ? '#ffffff' : '#121212',
+                    boxShadow: mode === 'light' ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : '0px 4px 12px rgba(0, 0, 0, 0.6)',
                     backdropFilter: 'blur(10px)',
+                    transition: 'background-color 0.3s ease-in-out',
                     zIndex: 1,
                 }}
             >
                 <Container>
                     <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between', py: 1 }}>
-                        <img src={LogoLight} alt="Logo" style={{ height: '50px', width: 'auto', cursor: 'pointer' }} />
-
-                        {/* Left Side: Image Logo */}
-                        {/* <img
+                        
+                        {/* Logo that changes based on theme */}
+                        <img
                             src={mode === 'light' ? LogoLight : LogoDark}
                             alt="Logo"
-                            style={{ height: '50px', width: 'auto', cursor: 'pointer' }}
-                        /> */}
+                            style={{
+                                height: '50px',
+                                width: 'auto',
+                                cursor: 'pointer',
+                                transition: 'opacity 0.3s ease-in-out',
+                            }}
+                        />
 
                         {/* Right Side: Dark Mode Toggle & Book a Free Demo Button */}
                         <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -67,14 +71,12 @@ export default function Navbar() {
                                     backgroundColor: '#FCC41B',
                                     color: '#000',
                                     px: 3,
-                                 
                                     display: { xs: 'none', sm: 'block' },
-                                 
                                 }}
                             >
                                 Book a Free Demo
                             </Button>
-                            {/* <IconButton
+                            <IconButton
                                 onClick={toggleTheme}
                                 sx={{
                                     color: mode === 'light' ? '#000' : '#fff',
@@ -85,11 +87,11 @@ export default function Navbar() {
                                 }}
                             >
                                 {mode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
-                            </IconButton> */}
+                            </IconButton>
                         </Box>
                     </Toolbar>
                 </Container>
             </AppBar>
-        // </ThemeProvider>
+        </ThemeProvider>
     );
 }

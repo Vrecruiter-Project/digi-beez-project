@@ -56,7 +56,7 @@ export default function Herosection() {
                 practical application and real-world projects.
               </Typography>
 
-              <Box display="flex" flexWrap="wrap" justifyContent="center" gap={2} mt={2}>
+              <Box display="flex" flexWrap="wrap"  gap={2} mt={2}>
                 {[
                   { icon: Support, text: "Placement assistance" },
                   { icon: Future, text: "AI-infused curriculum" },

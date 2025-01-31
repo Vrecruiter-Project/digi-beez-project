@@ -45,7 +45,7 @@ const Learners = () => {
         <Grid container spacing={3} justifyContent="center">
           {instructors.map((instructor, index) => (
             <Grid item key={index} xs={12} sm={6} md={4}>
-              <Card sx={{ width: 300, height: 400, mx: "auto", p: 2, textAlign: "center", boxShadow: 3, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <Card sx={{minWidth:280, height: 400, mx: "auto", p: 2, textAlign: "center", boxShadow: 3, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 <CardMedia
                   component="img"
                   sx={{ width: 80, height: 80, borderRadius: "50%", mx: "auto", my: 2, objectFit: "cover" }}
