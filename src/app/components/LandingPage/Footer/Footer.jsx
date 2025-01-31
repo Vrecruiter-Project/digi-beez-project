@@ -1,28 +1,29 @@
 import React from "react";
-import { Container, Grid, Typography, Link, Box, IconButton } from "@mui/material";
+import { Container, Typography, Link, Box, IconButton } from "@mui/material";
 import { Email, Phone, Instagram, Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
+import Grid from "@mui/material/Grid2";
 
 const Footer = () => {
   return (
     <Box sx={{ bgcolor: "#2e1f19", color: "white", py: 5, mt: 5 }}>
-      <Container maxWidth="lg">
+      <Container sx={{}}>
         <Grid container spacing={4}>
           {/* Contact Section */}
-          <Grid item xs={12} sm={4}>
+          <Grid size={{xs:12, sm:3}}>
             <Typography variant="h6" gutterBottom>
               <b>digibeez</b>
             </Typography>
             <Typography variant="body1">Contact us</Typography>
-            <Typography variant="body2" sx={{ display: "flex", alignItems: "center", mt: 1 }}>
+            <Typography variant="body1" sx={{ display: "flex", alignItems: "center", mt: 1 }}>
               <Phone sx={{ mr: 1 }} /> +91 9518035030
             </Typography>
-            <Typography variant="body2" sx={{ display: "flex", alignItems: "center", mt: 1 }}>
+            <Typography variant="body1" sx={{ display: "flex", alignItems: "center", mt: 1 }}>
               <Email sx={{ mr: 1 }} /> support@digibeez.in
             </Typography>
           </Grid>
 
           {/* Company Section */}
-          <Grid item xs={12} sm={2}>
+          <Grid size ={{xs:12, sm:3}}>
             <Typography variant="h6" gutterBottom>
               digibeez
             </Typography>
@@ -35,7 +36,7 @@ const Footer = () => {
               "Review",
               "Press release",
             ].map((text) => (
-              <Typography variant="body2" key={text}>
+              <Typography variant="body1" key={text}>
                 <Link href="#" color="inherit" underline="none">
                   {text}
                 </Link>
@@ -44,7 +45,7 @@ const Footer = () => {
           </Grid>
 
           {/* Courses Section */}
-          <Grid item xs={12} sm={3}>
+          <Grid size ={{xs:12, sm:3}}>
             <Typography variant="h6" gutterBottom>
               Courses
             </Typography>
@@ -55,7 +56,7 @@ const Footer = () => {
               "Video Editing",
               "Digital Marketing",
             ].map((text) => (
-              <Typography variant="body2" key={text}>
+              <Typography variant="body1" key={text}>
                 <Link href="#" color="inherit" underline="none">
                   {text}
                 </Link>
@@ -64,7 +65,7 @@ const Footer = () => {
           </Grid>
 
           {/* Community Section */}
-          <Grid item xs={12} sm={3}>
+          <Grid size ={{xs:12, sm:3}}>
             <Typography variant="h6" gutterBottom>
               Community
             </Typography>
@@ -73,7 +74,7 @@ const Footer = () => {
               "Student Chapters",
               "Hire from us",
             ].map((text) => (
-              <Typography variant="body2" key={text}>
+              <Typography variant="body1" key={text}>
                 <Link href="#" color="inherit" underline="none">
                   {text}
                 </Link>
@@ -93,7 +94,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <Box sx={{ textAlign: "center", mt: 2, opacity: 0.7 }}>
-          <Typography variant="body2">Copyright © digibeez. All rights reserved</Typography>
+          <Typography variant="body1">Copyright © digibeez. All rights reserved</Typography>
         </Box>
       </Container>
     </Box>
@@ -101,3 +102,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
