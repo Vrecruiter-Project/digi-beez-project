@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 import mern from "../../../../assets/bgsvg/mern.png";
-import bottom from "../../../../assets/bgsvg/plansbottom.png";
+// import bottom from "../../../../assets/bgsvg/plansbottom.png";
 
 const perks = [
   "Industry-standard curriculum by expert",
@@ -72,15 +72,15 @@ const Plans = () => {
           </Table>
         </TableContainer>
 
-
-      </Box> <img src={bottom} style={{
-        // width: "100%",
-        //  height: "100% ",
+        </Box>
+      {/*  <img src={bottom} style={{
+        width: "100%",
+         height: "100% ",
          objectFit: "cover",
            marginBottom: "3%",
       }} alt="mern" />
-      </>
-
+       */}
+</>
   );
 };
 
