@@ -8,6 +8,7 @@ import Trustlove from '../../components/Trust&Love/Trustlove'
 import Learners from '../../components/Learners/Learners'
 import Benefits from '../../components/beyondlearning/Benefits';
 import PlansAndPricing from '../../components/Plans/Plans';
+import OurExperience from '../../components/OurExperience/OurExperience';
 export default function Home() {
   return (
     <>
@@ -19,8 +20,9 @@ export default function Home() {
       <Benefits />
       <Trustlove />
       <Learners />
+      <OurExperience/>
       <PlansAndPricing />
-ayush
+
 
 
     </>
