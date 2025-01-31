@@ -44,8 +44,8 @@ const Learners = () => {
 
         <Grid container spacing={3} justifyContent="center">
           {instructors.map((instructor, index) => (
-            <Grid item key={index} xs={12} sm={6} md={4}>
-              <Card sx={{minWidth:280, height: 400, mx: "auto", p: 2, textAlign: "center", boxShadow: 3, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <Grid  key={index} size ={{xs:12, sm:6, md:4}}>
+              <Card sx={{ height: 400, mx: "auto", p: 2, textAlign: "center", boxShadow: 3, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 <CardMedia
                   component="img"
                   sx={{ width: 80, height: 80, borderRadius: "50%", mx: "auto", my: 2, objectFit: "cover" }}
@@ -62,7 +62,7 @@ const Learners = () => {
 
                   <Grid container spacing={1} sx={{ justifyContent: "center" , my: 1}}>
                     {instructor.companiesimg.map((subject, i) => (
-                      <Grid item key={i}>
+                      <Grid key={i}>
                         <img src={subject} alt={subject} style={{ width: 20, height: 20 }} />
                       </Grid>
                     ))}
