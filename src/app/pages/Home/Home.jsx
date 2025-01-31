@@ -10,6 +10,7 @@ import Learners from '../../components/LandingPage/learners/Learners'
 import Benefits from '../../components/LandingPage/beyondlearning/Benefits';
 import PlansAndPricing from '../../components/LandingPage/plans/Plans';
 import RequestCall from '../../components/LandingPage/RequestCall/RequestCall';
+import FAQ from '../../components/LandingPage/Faq/Faq';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <OurExperience />
       <PlansAndPricing />
       <RequestCall />
+      <FAQ/>
     </>
   )
 }
