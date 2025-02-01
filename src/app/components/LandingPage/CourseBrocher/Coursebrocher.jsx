@@ -3,16 +3,17 @@ import Grid from '@mui/material/Grid2'
 import { Box, Button, Container, Typography } from '@mui/material';
 import PlacementSwiper from '../CoursesSwiper/PlacementSwiper';
 //import flagImg from "../../../../assets/herosection/flag.png";
+import WebDevelopment from '../../../../assets/Brochurepdf/ayushnewnode-1.pdf'
 
 const Coursebrocher = () => {
   const buttonContent = [
-    "Download Web Development brochure",
-    "Download Web Designing brochure",
-    "Download Graphic Designing brochure",
-    "Download Video Editing brochure",
-    "Download Digital Marketing brochure",
-    "Download UI/UX Designing brochure",
-  ]
+    { label: "Download Web Development brochure", file:  WebDevelopment  },
+    { label: "Download Web Designing brochure", file: "/brochures/web-designing.pdf" },
+    { label: "Download Graphic Designing brochure", file: "/brochures/graphic-designing.pdf" },
+    { label: "Download Video Editing brochure", file: "/brochures/video-editing.pdf" },
+    { label: "Download Digital Marketing brochure", file: "/brochures/digital-marketing.pdf" },
+    { label: "Download UI/UX Designing brochure", file: "/brochures/ui-ux-designing.pdf" }
+  ];
 
   const placementItems = [
     {
@@ -64,17 +65,19 @@ const Coursebrocher = () => {
           <Grid container>
             {buttonContent.map((item, id) => (
               <Grid size={{ xs: 12, sm: 6, md: 4 }} key={id}>
-                <Button sx={{
-                  background: "#1E1E1E",
-                  color: "white",
-                  boxShadow: "revert",
-                  width: "95%",
-                  p: 1.5,
-                  mt: 3,
-                  borderRadius: 3
-                }}>
-                  {item}
-                </Button>
+                <a href={item.file} download style={{ textDecoration: 'none' }}>
+                  <Button sx={{
+                    background: "#1E1E1E",
+                    color: "white",
+                    boxShadow: "revert",
+                    width: "95%",
+                    p: 1.5,
+                    mt: 3,
+                    borderRadius: 3
+                  }}>
+                    {item.label}
+                  </Button>
+                </a>
               </Grid>
             ))}
           </Grid>
