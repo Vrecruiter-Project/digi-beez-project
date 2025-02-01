@@ -63,7 +63,7 @@ const PlacementSwiper = ({ placementItems }) => {
                 sx={{
                   p: 2,
                   width: "13em",
-                 // height: "100%",
+              
                   borderRadius: 2,
                   boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.4)",
                 }}
