@@ -8,7 +8,7 @@ import {
   useTheme,
 } from "@mui/material";
 import Grid2 from '@mui/material/Grid2';
-import hand from '../../../../assets/herosection/hand_.webp';
+import hand from '../../../../assets/herosection/hand.png';
 import Support from '../../../../assets/herosection/support.svg'
 import Future from '../../../../assets/herosection/future.svg'
 import Placement from '../../../../assets/herosection/placement.svg'
