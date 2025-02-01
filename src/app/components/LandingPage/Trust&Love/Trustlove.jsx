@@ -170,7 +170,7 @@ export default function TrustLove() {
   return (
     <Container className='pb-2'> 
       <Typography
-        variant="h4"
+        variant="h4" color="white"
         sx={{ textAlign: "center", fontWeight: "bold", mb: 4, mt: 5 }}
       >
         Voices of trust & love

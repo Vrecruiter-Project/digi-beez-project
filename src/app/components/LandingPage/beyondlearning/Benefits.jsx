@@ -23,7 +23,7 @@ const Benefits = () => {
   return (
     <Container>
       <Box sx={{ textAlign: "center", py: 5 }}>
-        <Typography variant="h4" fontWeight="bold" sx={{ mb: 4 }}>
+        <Typography variant="h4" color="white" fontWeight="bold" sx={{ mb: 4 }}>
           Benefits beyond learning
         </Typography>
         <Grid container spacing={3} justifyContent="center">

@@ -59,7 +59,7 @@ export default function Herosection() {
               <Box display="flex" flexWrap="wrap"  gap={2} mt={2}>
                 {[
                   { icon: Support, text: "Placement assistance" },
-                  { icon: Future, text: "AI-infused curriculum" },
+                  // { icon: Future, text: "AI-infused curriculum" },
                   { icon: Placement, text: "1:1 mentorship" },
                 ].map((feature, index) => (
                   <Box

@@ -16,32 +16,14 @@ import {
 import LightModeIcon from '@mui/icons-material/LightMode';
 
 export default function Navbar() {
-    // Get stored theme mode or default to 'light'
-    // const getStoredTheme = () => localStorage.getItem('themeMode') || 'light';
-    // const [mode, setMode] = useState(getStoredTheme);
 
-    // useEffect(() => {
-    //     localStorage.setItem('themeMode', mode);
-    // }, [mode]);
-
-    // const theme = createTheme({
-    //     palette: { mode: mode },
-    //     typography: {
-    //         fontFamily: '"Mulish", sans-serif',
-    //     }
-    // });
-
-    // const toggleTheme = () => {
-    //     setMode(mode === 'light' ? 'dark' : 'light');
-    // };
 
     return (
-        // <ThemeProvider theme={theme}>
-        //     <CssBaseline />
+      
             <AppBar
                 position="fixed"
                 sx={{
-                    p:1,
+                    
                     backgroundColor: '#ffffff',
                    // boxShadow: mode === 'light' ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : '0px 4px 12px rgba(0, 0, 0, 0.6)',
                     backdropFilter: 'blur(10px)',
