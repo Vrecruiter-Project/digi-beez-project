@@ -3,14 +3,13 @@ import Grid from '@mui/material/Grid2'
 import { Box, Button, Container, Typography } from '@mui/material';
 import PlacementSwiper from '../CoursesSwiper/PlacementSwiper';
 //import flagImg from "../../../../assets/herosection/flag.png";
-import WebDevelopment from '../../../../assets/Brochurepdf/ayushnewnode-1.pdf'
-
+import video from '../../../../assets/Brochurepdf/videoeditingcoursesyllabus.pdf'
 const Coursebrocher = () => {
   const buttonContent = [
-    { label: "Download Web Development brochure", file:  WebDevelopment  },
+    { label: "Download Web Development brochure", file: '' },
     { label: "Download Web Designing brochure", file: "/brochures/web-designing.pdf" },
     { label: "Download Graphic Designing brochure", file: "/brochures/graphic-designing.pdf" },
-    { label: "Download Video Editing brochure", file: "/brochures/video-editing.pdf" },
+    { label: "Download Video Editing brochure", file: video },
     { label: "Download Digital Marketing brochure", file: "/brochures/digital-marketing.pdf" },
     { label: "Download UI/UX Designing brochure", file: "/brochures/ui-ux-designing.pdf" }
   ];
@@ -51,7 +50,7 @@ const Coursebrocher = () => {
     <>
       <Box display="flex" alignItems="center" justifyContent="center" mt={{ xs: 0, md: 6, lg: 9 }}>
         <Container>
-          sdfghjk
+
           <Grid container >
             <Grid size={12}>
               <Typography sx={{
