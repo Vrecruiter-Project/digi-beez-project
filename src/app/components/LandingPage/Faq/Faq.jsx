@@ -57,7 +57,7 @@ const FAQ = () => {
         {faqData.map((faq, index) => (
           <Accordion key={index} sx={{mb: 2}}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>{faq.question}</Typography>
+              <Typography sx={{fontWeight: "bold"}}>{faq.question}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>{faq.answer}</Typography>
