@@ -7,7 +7,7 @@ const instructors = [
     name: "Ankush Singla",
     role: "Co-Founder & Instructor",
     image: "https://files.codingninjas.com/ankush-33190.webp",
-    companiesimg: ["https://files.codingninjas.com/ankush-33190.webp", "https://files.codingninjas.com/ankush-33190.webp"],
+    companiesimg: ["https://files.codingninjas.com/app-amazon-1705661953.webp", "https://files.codingninjas.com/app-facebook-1-1705661953.webp"],
 
     teaches: ["Blocks of C++ with DSA", "Data Science & Machine Learning"],
     linkedIn: "",
@@ -16,8 +16,8 @@ const instructors = [
   {
     name: "Nidhi Aggarwal",
     role: "Instructor",
-    companiesimg: ["https://files.codingninjas.com/ankush-33190.webp", "https://files.codingninjas.com/ankush-33190.webp", "https://files.codingninjas.com/ankush-33190.webp"],
-    image: "https://files.codingninjas.com/ankush-33190.webp",
+    companiesimg: ["https://files.codingninjas.com/app-amazon-1705661953.webp", "https://files.codingninjas.com/app-facebook-1-1705661953.webp", "https://files.codingninjas.com/app-google-1705661953.webp"],
+    image: "https://www.codingninjas.com/careercamp/wp-content/uploads/2021/08/F2.png",
     teaches: ["Blocks of C++ with DSA", "Basics of Java with DSA "],
     linkedIn: "",
     companies: ["IIIT"],
@@ -25,8 +25,8 @@ const instructors = [
   {
     name: "Manisha Khattar",
     role: "Instructor",
-    companiesimg: ["https://files.codingninjas.com/ankush-33190.webp", "https://files.codingninjas.com/ankush-33190.webp"],
-    image: "https://files.codingninjas.com/ankush-33190.webp",
+    companiesimg: ["https://files.codingninjas.com/app-facebook-1-1705661953.webp", "https://files.codingninjas.com/app-google-1705661953.webp"],
+    image: "https://www.codingninjas.com/careercamp/wp-content/uploads/2021/08/F3.png",
     teaches: ["Blocks in C++", "Basics of Java", "Basics of Python"],
     linkedIn: "",
     companies: ["Google", "IIIT"],
