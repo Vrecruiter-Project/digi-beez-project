@@ -30,7 +30,6 @@ export default function Home() {
       <PlansAndPricing />
       <RequestCall />
       <FAQ />
-      Hello
       <Footer/>
     </>
   )
