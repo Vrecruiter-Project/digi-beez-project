@@ -29,7 +29,8 @@ export default function Home() {
       <OurExperience />
       <PlansAndPricing />
       <RequestCall />
-      <FAQ/>
+      <FAQ />
+      Hello
       <Footer/>
     </>
   )
