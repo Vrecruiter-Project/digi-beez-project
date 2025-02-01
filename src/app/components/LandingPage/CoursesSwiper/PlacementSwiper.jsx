@@ -1,6 +1,8 @@
+import { Height } from '@mui/icons-material';
 import { Box, Card, Typography } from '@mui/material';
 import React from 'react';
 import styled from 'styled-components';
+import Grid from '@mui/material/Grid2';
 
 const Container = styled.div`
   .slider {
@@ -56,37 +58,69 @@ const PlacementSwiper = ({ placementItems }) => {
         <div className='slide-track'>
           {duplicatedItems.map((item, index) => (
             <Box key={index}>
-            <Card sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              m: 2,
-              p:1.5
-            }} >
-            <div className='slide'>
-              <img src={item.image} alt={`Company logo ${index}`} />
-            </div>
-            <div>
-              <img src={item.image} alt={`Company logo ${index}`} />
-              <Typography>{item.details}</Typography>
-            </div>
-            </Card>
-            <Card sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              m: 2,
-              p:1.5
-            }} >
-            <div className='slide'>
-              <img src={item.image} alt={`Company logo ${index}`} />
-            </div>
-            <div>
-              <img src={item.image} alt={`Company logo ${index}`} />
-              <Typography>{item.details}</Typography>
-            </div>
-            </Card>
+              
+              <Card
+                sx={{
+                  p: 2,
+                  width: "13em",
+                 // height: "100%",
+                  borderRadius: 2,
+                  boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.4)",
+                }}
+              >
+                <Grid container  >
+                  <Grid size={6} >
+                    <img style={{
+                      borderRadius: "50%",
+                      height: "100%",
+                    }} src={item.image} alt={item.details} />
+                  </Grid>
+                  <Grid size={6}>
+                    <Grid size={10}>
+                      <img  src={item.compimage} alt={item.details} />
+                    </Grid>
+                    <Grid size={12}>
+                      <Typography>{item.details}</Typography>
+                    </Grid>
+                  </Grid>
+
+                </Grid>
+              </Card>
+             
+
+              <Card
+                sx={{
+                  p: 2,
+                  width: "13em",
+                 // height: "100%",
+                  borderRadius: 2,
+                  boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.4)",
+                  mt:2
+                }}
+              >
+                <Grid container  >
+                  <Grid size={6} >
+                    <img style={{
+                      borderRadius: "50%",
+                      height: "100%",
+                    }} src={item.image} alt={item.details} />
+                  </Grid>
+                  <Grid size={6}>
+                    <Grid size={10}>
+                      <img  src={item.compimage} alt={item.details} />
+                    </Grid>
+                    <Grid size={12}>
+                      <Typography>{item.details}</Typography>
+                    </Grid>
+                  </Grid>
+
+                </Grid>
+              </Card>
+              
             </Box>
+
+            
+            
           ))}
         </div>
       </div>
@@ -95,4 +129,3 @@ const PlacementSwiper = ({ placementItems }) => {
 };
 
 export default PlacementSwiper;
-    

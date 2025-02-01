@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid2'
 import { Box, Button, Container, Typography } from '@mui/material';
 import PlacementSwiper from '../CoursesSwiper/PlacementSwiper';
-import flagImg from "../../../../assets/herosection/flag.png";
+//import flagImg from "../../../../assets/herosection/flag.png";
 
 const Coursebrocher = () => {
   const buttonContent = [
@@ -16,33 +16,33 @@ const Coursebrocher = () => {
 
   const placementItems = [
     {
-      image: flagImg,
-      logo: flagImg,
+      image: "https://files.codingninjas.com/screenshot_2024-02-08_153909-removebg-preview-1707388361.webp",
+      compimage: "https://files.codingninjas.com/axa-v2-1707477934.webp",
       details: "424% hike"
     },
     {
-      image: flagImg,
-      logo: flagImg,
+      image: "https://files.codingninjas.com/screenshot_2024-02-08_153909-removebg-preview-1707388361.webp",
+      compimage: "https://files.codingninjas.com/axa-v2-1707477934.webp",
       details: "424% hike"
     },
     {
-      image: flagImg,
-      logo: flagImg,
+      image: "https://files.codingninjas.com/screenshot_2024-02-08_153909-removebg-preview-1707388361.webp",
+      compimage: "https://files.codingninjas.com/axa-v2-1707477934.webp",
       details: "424% hike"
     },
     {
-      image: flagImg,
-      logo: flagImg,
+      image: "https://files.codingninjas.com/screenshot_2024-02-08_153909-removebg-preview-1707388361.webp",
+      compimage: "https://files.codingninjas.com/axa-v2-1707477934.webp",
       details: "424% hike"
     },
     {
-      image: flagImg,
-      logo: flagImg,
+      image: "https://files.codingninjas.com/screenshot_2024-02-08_153909-removebg-preview-1707388361.webp",
+      compimage: "https://files.codingninjas.com/axa-v2-1707477934.webp",
       details: "424% hike"
     },
     {
-      image: flagImg,
-      logo: flagImg,
+      image: "https://files.codingninjas.com/screenshot_2024-02-08_153909-removebg-preview-1707388361.webp",
+      compimage: "https://files.codingninjas.com/axa-v2-1707477934.webp",
       details: "424% hike"
     },
   ]
