@@ -20,9 +20,11 @@ export default function Home() {
       <Herosection />
       <Coursebrocher />
       <PlacementBenefits />
+      <div className='bg-black'>
       <CourseBenefits />
       <Benefits />
       <Trustlove />
+      </div>
       <Learners />
       <OurExperience />
       <PlansAndPricing />

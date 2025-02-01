@@ -168,7 +168,7 @@ export default function TrustLove() {
   ];
 
   return (
-    <Container>
+    <Container className='pb-2'> 
       <Typography
         variant="h4"
         sx={{ textAlign: "center", fontWeight: "bold", mb: 4, mt: 5 }}
