@@ -30,7 +30,8 @@ export default function Home() {
       <PlansAndPricing />
       <RequestCall />
       <FAQ />
-      <Footer/>
+      <Footer />
+      <h1>Bolo Hariom</h1>
     </>
   )
 }
