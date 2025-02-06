@@ -68,7 +68,7 @@ export default function TrustLove() {
       title: "Product Engineer",
       description:
         "As I wanted to switch my career from Mechanical to IT, I joined bootcamp. My goal was to learn full stack development and get placed in a good company with a good package. After completing this bootcamp you will be capable of cracking any interview and ready to work.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://randomuser.me/api/portraits/men/1.jpg",
       bgColor: "#4A90E2",
@@ -79,7 +79,7 @@ export default function TrustLove() {
       title: "Application Management Analyst",
       description:
         "I was inspired by the way things were explained during the 1st session which boosted my confidence. My goal was to have good technical knowledge to transform my career. It was overall a very good support and helped me to gain a new job.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://randomuser.me/api/portraits/men/2.jpg",
       bgColor: "#E91E63",
@@ -90,7 +90,7 @@ export default function TrustLove() {
       title: "Senior Software Engineer",
       description:
         "Before joining the bootcamp I was trying to learn development on my own but I was always hitting a dead end. CN helped me figure out what exactly I needed to learn to be a good developer and get a job. The program was very well organised. It motivated me to be consistent and study.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://files.codingninjas.com/img_9397__1_-removebg-preview-1706089407.webp",
       bgColor: "#FFC107",
@@ -103,7 +103,7 @@ export default function TrustLove() {
       title: "Product Engineer",
       description:
         "As I wanted to switch my career from Mechanical to IT, I joined bootcamp. My goal was to learn full stack development and get placed in a good company with a good package. After completing this bootcamp you will be capable of cracking any interview and ready to work.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://randomuser.me/api/portraits/men/1.jpg",
       bgColor: "#4A90E2",
@@ -114,7 +114,7 @@ export default function TrustLove() {
       title: "Application Management Analyst",
       description:
         "I was inspired by the way things were explained during the 1st session which boosted my confidence. My goal was to have good technical knowledge to transform my career. It was overall a very good support and helped me to gain a new job.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://files.codingninjas.com/akash-pal-1705927503.webp",
       bgColor: "#E91E63",
@@ -125,7 +125,7 @@ export default function TrustLove() {
       title: "Senior Software Engineer",
       description:
         "Before joining the bootcamp I was trying to learn development on my own but I was always hitting a dead end. CN helped me figure out what exactly I needed to learn to be a good developer and get a job. The program was very well organised. It motivated me to be consistent and study.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://files.codingninjas.com/9-1705997530.webp",
       bgColor: "#FFC107",
@@ -138,7 +138,7 @@ export default function TrustLove() {
       title: "Product Engineer",
       description:
         "As I wanted to switch my career from Mechanical to IT, I joined bootcamp. My goal was to learn full stack development and get placed in a good company with a good package. After completing this bootcamp you will be capable of cracking any interview and ready to work.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://files.codingninjas.com/whatsapp-image-2023-11-08-at-9-31-00-pm-1-1705654916.webp",
       bgColor: "#4A90E2",
@@ -149,7 +149,7 @@ export default function TrustLove() {
       title: "Application Management Analyst",
       description:
         "I was inspired by the way things were explained during the 1st session which boosted my confidence. My goal was to have good technical knowledge to transform my career. It was overall a very good support and helped me to gain a new job.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://files.codingninjas.com/21-1706019038.webp",
       bgColor: "#E91E63",
@@ -160,7 +160,7 @@ export default function TrustLove() {
       title: "Senior Software Engineer",
       description:
         "Before joining the bootcamp I was trying to learn development on my own but I was always hitting a dead end. CN helped me figure out what exactly I needed to learn to be a good developer and get a job. The program was very well organised. It motivated me to be consistent and study.",
-      post: "Coding Ninjas",
+      post: "Digibeez",
       companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/320px-Oracle_logo.svg.png",
       avatar: "https://files.codingninjas.com/3-1705996894.webp",
       bgColor: "#FFC107",

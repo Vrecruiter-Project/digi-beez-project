@@ -52,7 +52,7 @@ export default function Herosection() {
                 Full Stack Web Development Job Bootcamp
               </Typography>
               <Typography variant="body1" mt={2} color="white">
-                Choose MERN stack or Spring Boot and acquire expertise through
+                Choose MERN stack acquire expertise <br /> through
                 practical application and real-world projects.
               </Typography>
 

@@ -2,32 +2,33 @@ import React from "react";
 import { Card, CardContent, CardMedia, Typography, Button, Box, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
+
 const instructors = [
   {
-    name: "Ankush Singla",
-    role: "Co-Founder & Instructor",
-    image: "https://files.codingninjas.com/ankush-33190.webp",
+    name: "Sandhiya Rani",
+    role: "Instructor",
+    image: "https://img.freepik.com/free-photo/portrait-happy-woman-with-digital-tablet_329181-11681.jpg",
     companiesimg: ["https://files.codingninjas.com/app-amazon-1705661953.webp", "https://files.codingninjas.com/app-facebook-1-1705661953.webp"],
 
-    teaches: ["Blocks of C++ with DSA", "Data Science & Machine Learning"],
+    teaches: ["Blocks of Photoshop with Graphic", "Graphic Designer & Web Designer"],
     linkedIn: "",
     companies: ["amazon", "facebook", "scaler"],
   },
   {
-    name: "Nidhi Aggarwal",
+    name: "Arun Prabhu",
     role: "Instructor",
     companiesimg: ["https://files.codingninjas.com/app-amazon-1705661953.webp", "https://files.codingninjas.com/app-facebook-1-1705661953.webp", "https://files.codingninjas.com/app-google-1705661953.webp"],
-    image: "https://www.codingninjas.com/careercamp/wp-content/uploads/2021/08/F2.png",
-    teaches: ["Blocks of C++ with DSA", "Basics of Java with DSA "],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6qxXYnYxhHYEXP8xrucC7QApbbI4qi4ralw&s",
+    teaches: ["Blocks of React with MUI", "Web Developer & Web Designer"],
     linkedIn: "",
     companies: ["IIIT"],
   },
   {
-    name: "Manisha Khattar",
+    name: "Ratan Kumar Das",
     role: "Instructor",
     companiesimg: ["https://files.codingninjas.com/app-facebook-1-1705661953.webp", "https://files.codingninjas.com/app-google-1705661953.webp"],
-    image: "https://www.codingninjas.com/careercamp/wp-content/uploads/2021/08/F3.png",
-    teaches: ["Blocks in C++", "Basics of Java", "Basics of Python"],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTkdul0wXCUuZ2YgMWlYUVkFti6rRCB2XMw&s",
+    teaches: ["Blocks in React", "Web Developer", "Basics of Backend"],
     linkedIn: "",
     companies: ["Google", "IIIT"],
     
@@ -60,13 +61,13 @@ const Learners = () => {
                     {instructor.role}
                   </Typography>
 
-                  <Grid container spacing={1} sx={{ justifyContent: "center" , my: 1}}>
+                  {/* <Grid container spacing={1} sx={{ justifyContent: "center" , my: 1}}>
                     {instructor.companiesimg.map((subject, i) => (
                       <Grid key={i}>
                         <img src={subject} alt={subject} style={{ width: 20, height: 20 }} />
                       </Grid>
                     ))}
-                  </Grid>
+                  </Grid> */}
 
 
 
