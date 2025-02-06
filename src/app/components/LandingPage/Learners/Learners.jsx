@@ -61,13 +61,13 @@ const Learners = () => {
                     {instructor.role}
                   </Typography>
 
-                  {/* <Grid container spacing={1} sx={{ justifyContent: "center" , my: 1}}>
+                  <Grid container spacing={1} sx={{ justifyContent: "center" , my: 1}}>
                     {instructor.companiesimg.map((subject, i) => (
                       <Grid key={i}>
                         <img src={subject} alt={subject} style={{ width: 20, height: 20 }} />
                       </Grid>
                     ))}
-                  </Grid> */}
+                  </Grid>
 
 
 
